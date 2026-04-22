@@ -3,9 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <title>Applepi_Animations - Principal</title>
-       <link rel="icon" type="image/png" href="Imagenes/Logo Cindy.png">
+        <link rel="icon" type="image/png" href="Imagenes/Logo_Cindy.png">
         
         <style>
+            /* CONFIGURACIÓN GLOBAL */
+            body { 
+                margin-top: 160px; 
+                background-color: #fff9f0; 
+                padding: 20px; 
+                line-height: 1.6; 
+                /* NUEVA LETRA PARA TODA LA PÁGINA */
+                font-family: 'Georgia', 'Times New Roman', serif;
+                color: #5d4037;
+            }
+
             header {
                 position: fixed;
                 top: 0; 
@@ -16,24 +27,27 @@
                 z-index: 1000;
                 padding: 15px 0; 
             }
+
             nav { 
                 display: flex; 
                 justify-content: center; 
                 gap: 50px; 
             }
+
             .nav-item {
                 display: flex;
-                flex-direction: column; /* Texto debajo de la imagen */
+                flex-direction: column; 
                 align-items: center; 
                 text-decoration: none;
                 color: #5d4037;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-weight: bold;
                 transition: 0.3s;
             }
+
             .nav-item:hover { 
                 color: #e67e22; 
             }
+
             .nav-icon {
                 width: 70px; 
                 height: 70px; 
@@ -43,26 +57,47 @@
                 margin-bottom: 5px; 
                 transition: transform 0.3s;
             }
+
             .nav-item:hover .nav-icon { 
                 transform: scale(1.1); 
                 border-color: #e67e22; 
             }
-            body { 
-                margin-top: 160px; 
-                background-color: #fff9f0; 
-                padding: 20px; 
-                line-height: 1.6; 
+
+            h1 { 
+                text-align: center; 
+                color: #d35400; 
+                font-size: 2.5em;
             }
-            h1 { text-align: center; color: #d35400; }
+
+            h2 { 
+                color: #d35400; 
+                border-bottom: 2px solid #e69d5d;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+
             .fila-imagenes { 
                 display: flex; 
                 justify-content: center; 
-                gap: 10px; 
+                gap: 15px; 
                 margin: 40px 0; 
+                flex-wrap: wrap; /* Para que en celular se acomoden solas */
             }
+
             .fila-imagenes img { 
-                border-radius: 10px; 
+                border-radius: 15px; 
                 object-fit: cover; 
+                box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            }
+
+            .main-img {
+                display: block;
+                margin: 20px auto;
+                border-radius: 15px;
+            }
+
+            em {
+                color: #e67e22;
             }
         </style>
     </head>
@@ -76,7 +111,7 @@
 
                 <a href="Prettyboy.html" class="nav-item">
                     <img src="https://i.pinimg.com/736x/65/b5/a7/65b5a7ffd297b16c7ee62b8162f2ab15.jpg" class="nav-icon">
-                    <span>★</span>
+                    <span>★ Pretty Boy ★</span>
                 </a>
 
                 <a href="https://www.youtube.com/live/hPt1gUE1zAc?si=7UpgYA56pj7ntkfB" target="_blank" class="nav-item">
@@ -90,8 +125,8 @@
 
         <div class="fila-imagenes">
             <img src="Imagenes/Naranja1.png" width="300px">
-            <img src="Imagenes\Fila2.jpg" width="300px">
-            <img src="Imagenes\Fila1.jpg" width="300px">
+            <img src="Imagenes/Fila2.jpg" width="300px">
+            <img src="Imagenes/Fila1.jpg" width="300px">
         </div>
 
         <h2 id="razones">✧Razones por la que es cool✧</h2>
@@ -105,12 +140,12 @@
 
         <h2>✧Datos curiosos✧</h2>
         <p>
-            ✿ Tienen muchísima Vitamina C, lo que ayuda a que tus defensas estén listas para pelear contra cualquier virus en el colegio.<br>
+            ✿ Tienen muchísima <b>Vitamina C</b>, lo que ayuda a que tus defensas estén listas para pelear contra cualquier virus en el colegio.<br>
             ✿ Gracias a sus antioxidantes, ayudan a que tu piel se vea más sana y radiante. ¡Es belleza desde adentro!<br>
             ✿ Aunque no lo creas, tienen calcio y magnesio, fundamentales para que crezcas fuerte.
         </p>
 
-        <img src="Imagenes/Mandarinacool.png" width="300px">
+        <img src="Imagenes/Mandarinacool.png" width="300px" class="main-img">
         
         <br>
         <h2 id="historia">✧¿Cómo te hacen feliz?✧</h2>
